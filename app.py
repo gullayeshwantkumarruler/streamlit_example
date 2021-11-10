@@ -17,7 +17,7 @@ with st.sidebar:
     st.header("Configuration")
     with st.form(key="grid_reset"):
         n_photos = st.slider("Number of cat photos:", 1, 4, 1)
-        n_cols = st.number_input("Number of columns", 1, 4, 1)
+        n_cols = st.number_input("Number of columns", 4, 4, 1)
         st.form_submit_button(label="Reset images and layout")
     with st.expander("About this app"):
         st.markdown("It's about cats :cat:!")
