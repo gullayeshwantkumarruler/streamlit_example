@@ -7,6 +7,7 @@ st.image(image, caption='Sunrise by the mountains')
 
 # ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa"
 
+
 # with st.sidebar:
 #     st.header("Configuration")
 #     with st.form(key="grid_reset"):
