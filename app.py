@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 images=["burj_khalifa/burj_khalifa (1).jpg","burj_khalifa/burj_khalifa (2).jpg","burj_khalifa/burj_khalifa (3).jpg","burj_khalifa/burj_khalifa (4).jpg"]
 for i in images:
-  image = Image.open(i)
+  image = Image.open(i).resize((400, 400))
   st.image(image, caption='Sunrise by the mountains')
 
 # ENDPOINT = "burj_khalifa (2).jpg"
