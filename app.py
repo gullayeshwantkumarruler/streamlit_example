@@ -7,7 +7,7 @@ mon_images=[]
 images=["burj_khalifa/burj_khalifa (1).jpg","burj_khalifa/burj_khalifa (2).jpg","burj_khalifa/burj_khalifa (3).jpg","burj_khalifa/burj_khalifa (4).jpg"]
 for i in images:
   image = Image.open(i).resize((100, 100))
-#   st.image(image, caption='burj_khalifa')
+  st.image(image, caption='burj_khalifa')
   mon_images.append(image)
 
 # ENDPOINT = "burj_khalifa (2).jpg"
