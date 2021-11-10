@@ -2,30 +2,35 @@ import numpy as np
 import requests
 import streamlit as st
 
-ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa"
+>>> from PIL import Image
+>>> image = Image.open("https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa/burj_khalifa%20(1).jpg")
+>>>
+>>> st.image(image, caption='Sunrise by the mountains')
 
-with st.sidebar:
-    st.header("Configuration")
-    with st.form(key="grid_reset"):
-        n_photos = st.slider("Number of cat photos:", 4, 8, 4)
-        n_cols = st.number_input("Number of columns", 2, 8, 4)
-        st.form_submit_button(label="Reset images and layout")
-    with st.expander("About this app"):
-        st.markdown("It's about cats :cat:!")
-    st.caption("Source: https://cataas.com/#/")
+# ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa"
 
-st.title("Choose your favorite cat :cat:")
-st.caption(
-    "You can display the image in full size by hovering it and clicking the double arrow"
-)
+# with st.sidebar:
+#     st.header("Configuration")
+#     with st.form(key="grid_reset"):
+#         n_photos = st.slider("Number of cat photos:", 4, 8, 4)
+#         n_cols = st.number_input("Number of columns", 2, 8, 4)
+#         st.form_submit_button(label="Reset images and layout")
+#     with st.expander("About this app"):
+#         st.markdown("It's about cats :cat:!")
+#     st.caption("Source: https://cataas.com/#/")
 
-cat_images = [
-    requests.get(f"{ENDPOINT}?width=1200&height=1200").content for i in range(n_photos)
-]
-n_rows = 1 + len(cat_images) // int(n_cols)
-rows = [st.container() for _ in range(n_rows)]
-cols_per_row = [r.columns(n_cols) for r in rows]
-cols = [column for row in cols_per_row for column in row]
+# st.title("Choose your favorite cat :cat:")
+# st.caption(
+#     "You can display the image in full size by hovering it and clicking the double arrow"
+# )
 
-for image_index, cat_image in enumerate(cat_images):
-    cols[image_index].image(cat_image)
+# cat_images = [
+#     requests.get(f"{ENDPOINT}?width=1200&height=1200").content for i in range(n_photos)
+# ]
+# n_rows = 1 + len(cat_images) // int(n_cols)
+# rows = [st.container() for _ in range(n_rows)]
+# cols_per_row = [r.columns(n_cols) for r in rows]
+# cols = [column for row in cols_per_row for column in row]
+
+# for image_index, cat_image in enumerate(cat_images):
+#     cols[image_index].image(cat_image)
