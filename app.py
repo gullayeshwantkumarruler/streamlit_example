@@ -2,7 +2,7 @@ import numpy as np
 import requests
 import streamlit as st
 
-ENDPOINT = "https://cataas.com/cat"
+ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/tree/main/burj_khalifa"
 
 with st.sidebar:
     st.header("Configuration")
