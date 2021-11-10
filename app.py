@@ -2,7 +2,7 @@ import numpy as np
 import requests
 import streamlit as st
 
-ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa/"
+ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa"
 
 with st.sidebar:
     st.header("Configuration")
