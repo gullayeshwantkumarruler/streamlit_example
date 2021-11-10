@@ -27,11 +27,11 @@ for i in images:
 #     "You can display the image in full size by hovering it and clicking the double arrow"
 # )
 
-cat_images =mon_images
-n_rows = 1 + len(cat_images) // int(1.0)
-rows = [st.container() for _ in range(1)]
-cols_per_row = [r.columns(4.0) for r in rows]
-cols = [column for row in cols_per_row for column in row]
+# cat_images =mon_images
+# n_rows = 1 + len(cat_images) // int(1.0)
+# rows = [st.container() for _ in range(1)]
+# cols_per_row = [r.columns(4.0) for r in rows]
+# cols = [column for row in cols_per_row for column in row]
 
-for image_index, cat_image in enumerate(cat_images):
-    cols[image_index].image(cat_image)
+# for image_index, cat_image in enumerate(cat_images):
+#     cols[image_index].image(cat_image)
