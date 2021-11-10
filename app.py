@@ -2,8 +2,10 @@ import numpy as np
 import requests
 import streamlit as st
 from PIL import Image
-image = Image.open("burj_khalifa/burj_khalifa (1).jpg")
-st.image(image, caption='Sunrise by the mountains')
+images=["burj_khalifa/burj_khalifa (1).jpg","burj_khalifa/burj_khalifa (2).jpg","burj_khalifa/burj_khalifa (3).jpg","burj_khalifa/burj_khalifa (4).jpg"]
+for i in images:
+  image = Image.open(i)
+  st.image(image, caption='Sunrise by the mountains')
 
 # ENDPOINT = "burj_khalifa (2).jpg"
 
