@@ -24,9 +24,9 @@ with st.sidebar:
     st.caption("Source: https://cataas.com/#/")
 
 st.title("Choose your favorite cat :cat:")
-st.caption(
-    "You can display the image in full size by hovering it and clicking the double arrow"
-)
+# st.caption(
+#     "You can display the image in full size by hovering it and clicking the double arrow"
+# )
 
 cat_images =mon_images
 n_rows = 1 + len(cat_images) // int(n_cols)
