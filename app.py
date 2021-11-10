@@ -5,7 +5,7 @@ from PIL import Image
 images=["burj_khalifa/burj_khalifa (1).jpg","burj_khalifa/burj_khalifa (2).jpg","burj_khalifa/burj_khalifa (3).jpg","burj_khalifa/burj_khalifa (4).jpg"]
 for i in images:
   image = Image.open(i).resize((100, 100))
-  st.image(image, caption='Sunrise by the mountains')
+  st.image(image, caption='burj_khalifa')
 
 # ENDPOINT = "burj_khalifa (2).jpg"
 
