@@ -7,7 +7,7 @@ ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/ma
 with st.sidebar:
     st.header("Configuration")
     with st.form(key="grid_reset"):
-        n_photos = st.slider("Number of cat photos:", 4, 128, 16)
+        n_photos = st.slider("Number of cat photos:", 4, 8, 4)
         n_cols = st.number_input("Number of columns", 2, 8, 4)
         st.form_submit_button(label="Reset images and layout")
     with st.expander("About this app"):
