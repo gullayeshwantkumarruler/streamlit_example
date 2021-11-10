@@ -29,7 +29,7 @@ for i in images:
 
 cat_images =mon_images
 n_rows = 1 + len(cat_images) // int(1.0)
-rows = [st.container() for _ in range(1.0)]
+rows = [st.container() for _ in range(1)]
 cols_per_row = [r.columns(4.0) for r in rows]
 cols = [column for row in cols_per_row for column in row]
 
