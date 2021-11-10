@@ -1,11 +1,9 @@
 import numpy as np
 import requests
 import streamlit as st
-
->>> from PIL import Image
->>> image = Image.open("https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa/burj_khalifa%20(1).jpg")
->>>
->>> st.image(image, caption='Sunrise by the mountains')
+from PIL import Image
+image = Image.open("https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa/burj_khalifa%20(1).jpg")
+st.image(image, caption='Sunrise by the mountains')
 
 # ENDPOINT = "https://github.com/gullayeshwantkumarruler/streamlit_example/blob/main/burj_khalifa"
 
